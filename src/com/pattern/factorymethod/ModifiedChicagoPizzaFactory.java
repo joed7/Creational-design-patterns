@@ -3,9 +3,9 @@ package com.pattern.factorymethod;
 public class ModifiedChicagoPizzaFactory extends AbstractPizzaFactory {
 
 	@Override
-	public Pizza createPizza(String name) {
+	protected Pizza createPizza(String name) {
 		Pizza p = null;
-		
+
 		if (name == "chicagopizza1") {
 			p = new ChicagoPizza1();
 		} else if (name == "chicagopizza2") {

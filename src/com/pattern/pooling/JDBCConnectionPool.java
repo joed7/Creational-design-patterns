@@ -15,13 +15,13 @@ public class JDBCConnectionPool extends ObjectPool<Connection> {
 	private String userName;
 	private String password;
 	
-	public JDBCConnectionPool(int size) {
+	private JDBCConnectionPool(int size) {
 		super(size);
 	}
 
 	public JDBCConnectionPool(int size, String driver, String dsn, String usr,
 			String pwd) {
-		super(size);
+		this(size);
 		try {
 			Class.forName(driver).newInstance();
 		} catch (Exception e) {

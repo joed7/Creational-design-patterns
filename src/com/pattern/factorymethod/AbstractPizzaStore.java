@@ -1,6 +1,6 @@
 package com.pattern.factorymethod;
 
-public abstract class AbstractPizzaFactory {
+public abstract class AbstractPizzaStore {
 
 	protected abstract Pizza createPizza(String name);
 

@@ -1,6 +1,6 @@
 package com.pattern.factorymethod;
 
-public class ModifiedNYPizzaFactory extends AbstractPizzaFactory {
+public class ModifiedNYPizzaStore extends AbstractPizzaStore {
 
 	@Override
 	protected Pizza createPizza(String name) {

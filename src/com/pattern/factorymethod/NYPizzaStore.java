@@ -1,10 +1,10 @@
 package com.pattern.factorymethod;
 
-public class ChicagoPizzaFactory {
-
+public class NYPizzaStore {
+	
 	public SimplePizzaFactory pizzaFactory;
 
-	public ChicagoPizzaFactory(SimplePizzaFactory productFactory) {
+	public NYPizzaStore(SimplePizzaFactory productFactory) {
 		super();
 		this.pizzaFactory = productFactory;
 	}
@@ -16,9 +16,10 @@ public class ChicagoPizzaFactory {
 
 		p.bake();
 		p.packing();
-		//p.delivery();
+		p.delivery();
 
 		return p;
 
 	}
+
 }

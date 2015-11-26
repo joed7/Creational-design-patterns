@@ -1,3 +1,4 @@
+package com.pattern.singleton;
 /**
  * Class demonstrating singleton design patterns
  * 

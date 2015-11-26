@@ -33,3 +33,7 @@ __UML Diagram__
 The uml diagram for Singleton design pattern looks like this
 
 ![](https://github.com/joed7/Creational-design-patterns/blob/master/images/singleton.png)
+
+__Source Code__
+
+Please refer to the [link](https://github.com/joed7/Creational-design-patterns/tree/master/src/com/pattern/singleton) for Singelton source code.

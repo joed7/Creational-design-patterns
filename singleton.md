@@ -36,4 +36,4 @@ The uml diagram for Singleton design pattern looks like this
 
 __Source Code__
 
-Please refer to the [link](https://github.com/joed7/Creational-design-patterns/tree/master/src/com/pattern/singleton) for Singelton source code.
+Please refer to the [link](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/singleton/Singleton.java) for Singelton source code.

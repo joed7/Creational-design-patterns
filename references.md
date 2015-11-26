@@ -5,3 +5,4 @@
 * [Binpress](https://www.binpress.com/tutorial/the-factory-design-pattern-explained-by-example/142)
 * [Stackoverflow](http://stackoverflow.com/)
 * [Design patterns pages on wikipedia](https://www.wikipedia.org/)
+* [How to do in java](http://howtodoinjava.com/2013/01/04/prototype-design-pattern-in-java/)

@@ -1,6 +1,6 @@
 ##Object Pooling
 
-In Object pooling design pattern, we instantiate a bunch of instance for a parituclar class and store them in a data-structure. When a client request the instance, we remove the item from the data-structure and issue it to the client, and when the client is done, the instance is put back in the data-structure; Thus allowing the reuse for the instances created. This is specifically beneficial in the scenarios where cost of initializing a class instance is high. We generally specify maximum size for the pool which specify maximum number of objects we can have at a time, if the number of clients connections exceed the maximum size of the pool, the client has to wait until one of pool objects becomes free.
+In Object pooling design pattern, we instantiate a bunch of instances for a parituclar class and store them in a data-structure. When a client requests the instance, we remove the item from the data-structure and issue it to the client, and when the client is done, the instance is put back in the data-structure; Thus allowing the reuse for the instances created. This is specifically beneficial in the scenarios where cost of initializing a class instance is high. We generally specify maximum size for the pool which specify maximum number of objects we can have at a time, if the number of clients connections exceed the maximum size of the pool, the client has to wait until one of pool objects becomes free.
 
 The general diagram for object pool design pattern looks like this:
 ![](https://github.com/joed7/Creational-design-patterns/blob/master/images/object-pool.png)  
@@ -71,6 +71,10 @@ The above code defines an abstract class for an object pool. The class has `getI
 ```
 
 The above source-code provides the definition of the `create()` method for JDBC Connection object. 	
+
+The above implementation initializes the pool objects all the once at the beginning, In some variation, pool objectes can be ceated on need basis much like the flow chart shown below.
+
+![](https://github.com/joed7/Creational-design-patterns/blob/master/images/Object_pool_1.png)  
 
 
 __Source Code__

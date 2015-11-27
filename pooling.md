@@ -56,6 +56,21 @@ public abstract class ObjectPool<T> {
 
 }
 ```
+The above code defines an abstract class for an object pool. The class has `getItem()` and `returnItem()` methods which clients use to request and returns pool objects. The class leaves method `create()` abstract and leaves the implmentation to the sub-classes. 
+
+```
+	@Override
+	protected Connection create() {
+		try {
+			return (DriverManager.getConnection(url, userName, password));
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return (null);
+		}
+	}
+```
+
+The above source-code provides the definition of the `create()` method for JDBC Connection object. 	
 
 
 __Source Code__

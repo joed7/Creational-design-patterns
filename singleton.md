@@ -2,7 +2,7 @@
 
 Singleton design pattern allows instantiation of a class to one object. It is useful in the scenarios where one object is needed to coordinate actions across the system.
 
-For the singleton class, the constructor is made private so direct instantiation is not possible. We make the class instance a static instance member and acess it via a static `getInstance` method. To handle the multithreading scenario, we add the synchronization block. In the example shown below, the instance is initialized lazily. 
+For the singleton class, the constructor is made private so direct instantiation is not possible. We make the class instance a static instance member and acess it via a static `getInstance` method. To handle the multithreading scenario, we add the synchronization block. 
 
 
 ```
@@ -27,6 +27,8 @@ public class Singleton {
 }
 
 ```  
+
+The above code defines the class Singleton in the form of singleton design pattern. There are many variation of singleton design pattern, the one above initializes the instance in a lazy manner(when the instance is requested by the client), some variations initialize the initialize on class loading like this `Singleton instance = new Singleton()` instead. 
 
 __UML Diagram__
 

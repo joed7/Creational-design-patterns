@@ -11,7 +11,7 @@ import java.sql.SQLException;
  */
 public class JDBCConnectionPool extends ObjectPool<Connection> {
 
-	private String dsn;
+	private String url;
 	private String userName;
 	private String password;
 	
@@ -19,7 +19,7 @@ public class JDBCConnectionPool extends ObjectPool<Connection> {
 		super(size);
 	}
 
-	public JDBCConnectionPool(int size, String driver, String dsn, String usr,
+	public JDBCConnectionPool(int size, String driver, String url, String usr,
 			String pwd) {
 		this(size);
 		try {
@@ -27,15 +27,15 @@ public class JDBCConnectionPool extends ObjectPool<Connection> {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		this.dsn = dsn;
-		this.password = usr;
+		this.url = url;
+		this.userName = usr;
 		this.password = pwd;
 	}
 
 	@Override
 	protected Connection create() {
 		try {
-			return (DriverManager.getConnection(dsn, userName, password));
+			return (DriverManager.getConnection(url, userName, password));
 		} catch (SQLException e) {
 			e.printStackTrace();
 			return (null);

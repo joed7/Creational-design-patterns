@@ -66,7 +66,8 @@ Pizza p = new Pizza.Builder(size.MEDIUM).cheese(true).pepperoni(true).build();
 ```
 This pattern is flexible and it is easy to add manipulate parameter list in the future. Here we replace the multiple constructors with a series of parameters like the code in the following block `new Pizza.Builder(size.MEDIUM).cheese(true).pepperoni(true).build()`.
 
-One anology of builder pattern is building a meal at a fast food restraunt.  It typically consist of some combination main item, a side item, a drink, a dessert etc. The customer specifies the list of items he wants in the meal, that is analogous to the code  `new Pizza.Builder(size.MEDIUM).cheese(true).pepperoni(true).build();` above.
+One anology of builder pattern is building a meal at a fast food restraunt.  It typically consist of some combination main item, a side item, a drink, a dessert etc. The customer specifies the list of items he wants in the meal, that is analogous to the code  
+`new Pizza.Builder(size.MEDIUM).cheese(true).pepperoni(true).build();` above.
 
 ![](https://github.com/joed7/Creational-design-patterns/blob/master/images/builder.png)
 

@@ -1,6 +1,6 @@
 package com.pattern.prototype;
 
-public abstract class Shape implements Prototypable {
+public abstract class Shape implements Cloneable {
 
 	private String id;
 	protected String type;

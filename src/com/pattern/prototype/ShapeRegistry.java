@@ -18,6 +18,6 @@ public class ShapeRegistry {
 
 	public static Shape getInstance(final String s)
 			throws CloneNotSupportedException {
-		return prototypes.get(s);
+		return (Shape) prototypes.get(s).clone();
 	}
 }

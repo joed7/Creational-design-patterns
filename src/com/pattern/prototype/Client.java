@@ -1,12 +1,12 @@
 package com.pattern.prototype;
 
-import com.pattern.prototype.PrototypeFactory.ModelType;
+import com.pattern.prototype.ShapeRegistry.ModelType;
 
 public class Client {
 
 	public static void main(String[] args) throws CloneNotSupportedException {
-		 PrototypeCapable moviePrototype = PrototypeFactory.getInstance(ModelType.MOVIE);
-		 PrototypeCapable albumPrototype = PrototypeFactory.getInstance(ModelType.ALBUM);
+		 Shape rectangle = ShapeRegistry.getInstance(ModelType.RECTANGLE);
+		 Shape square = ShapeRegistry.getInstance(ModelType.SQUARE);
 
 	}
 }

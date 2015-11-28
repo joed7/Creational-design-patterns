@@ -1,5 +1,5 @@
 package com.pattern.prototype;
 
-public interface PrototypeCapable {
-	public PrototypeCapable clone() throws CloneNotSupportedException;
+public interface Prototypable {
+	public Object clone() throws CloneNotSupportedException;
 }

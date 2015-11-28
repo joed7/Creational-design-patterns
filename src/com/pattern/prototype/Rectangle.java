@@ -1,21 +1,13 @@
 package com.pattern.prototype;
 
-public class Album implements PrototypeCapable {
+public class Rectangle extends Shape {
 
-    private String name = null;
-    
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    @Override
-    public Album clone() throws CloneNotSupportedException {
-        return (Album) super.clone();
-    }
-    @Override
-    public String toString() {
-        return "Album";
-    }
+	public Rectangle() {
+		type = "Rectangle";
+	}
+
+	@Override
+	public void draw() {
+		System.out.println("draw a rectangle");
+	}
 }

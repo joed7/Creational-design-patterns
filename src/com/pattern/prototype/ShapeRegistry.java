@@ -1,23 +1,23 @@
 package com.pattern.prototype;
 
-public class PrototypeFactory
-{
-    public static class ModelType
-    {
-        public static final String MOVIE = "movie";
-        public static final String ALBUM = "album";
-        public static final String SHOW = "show";
-    }
-    private static java.util.Map<String , PrototypeCapable> prototypes = new java.util.HashMap<String , PrototypeCapable>();
- 
-    static
-    {
-        prototypes.put(ModelType.MOVIE, new Movie());
-        prototypes.put(ModelType.ALBUM, new Album());
-        prototypes.put(ModelType.SHOW, new Show());
-    }
- 
-    public static PrototypeCapable getInstance(final String s) throws CloneNotSupportedException {
-        return ((PrototypeCapable) prototypes.get(s)).clone();
-    }
+public class ShapeRegistry {
+	
+	public static class ModelType {
+		public static final String TRIANGLE = "triangle";
+		public static final String SQUARE = "square";
+		public static final String RECTANGLE = "rectangle";
+	}
+
+	private static java.util.Map<String, Shape> prototypes = new java.util.HashMap<String, Shape>();
+
+	static {
+		prototypes.put(ModelType.TRIANGLE, new Triangle());
+		prototypes.put(ModelType.SQUARE, new Square());
+		prototypes.put(ModelType.RECTANGLE, new Rectangle());
+	}
+
+	public static Shape getInstance(final String s)
+			throws CloneNotSupportedException {
+		return prototypes.get(s);
+	}
 }

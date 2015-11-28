@@ -1,24 +1,14 @@
 package com.pattern.prototype;
 
-public class Show implements PrototypeCapable {
-	private String name = null;
+public class Square extends Shape {
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
+	public Square() {
+		type = "Rectangle";
 	}
 
 	@Override
-	public Show clone() throws CloneNotSupportedException {
-		return (Show) super.clone();
+	public void draw() {
+		System.out.println("draw a rectangle");
 	}
-
-	@Override
-	public String toString() {
-		return "Show";
-	}
-
 }
+

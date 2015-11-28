@@ -58,4 +58,8 @@ ModifiedNYPizzaStore provides the implmentation of the factory method
 	}
 ```	
 	
-In our design, if in future, we want to expand our pizza franchisee, we just have to extend the AbstractPizzaStore and provide the implmentation of the factory method. 	
+In our design, if in future, we want to expand our pizza franchisee, we just have to extend the AbstractPizzaStore and provide the implmentation of the factory method in the subclass. 	
+
+__Source Code__
+
+The source code for this design pattern can be found [here](https://github.com/joed7/Creational-design-patterns/tree/master/src/com/pattern/factorymethod).

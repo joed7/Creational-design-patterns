@@ -1,35 +1,40 @@
 package com.pattern.abstractfactory;
 
+/**
+ * Factory for NY incredients
+ * @author rohit
+ *
+ */
 public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
 
 	@Override
-	public void createDough() {
-
+	public Dough createDough() {
+		return null;
 	}
 
 	@Override
-	public void createSauce() {
-
+	public Sauce createSauce() {
+		return null;
 	}
 
 	@Override
-	public void createCheese() {
-
+	public Cheese createCheese() {
+		return null;
 	}
 
 	@Override
-	public void createVeggies() {
-
+	public Veggies createVeggies() {
+		return null;
 	}
 
 	@Override
-	public void createPepporoni() {
-
+	public Pepproni createPepporoni() {
+		return null;
 	}
 
 	@Override
-	public void createClam() {
-
+	public Clam createClam() {
+		return null;
 	}
 
 }

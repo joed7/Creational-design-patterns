@@ -2,16 +2,16 @@ package com.pattern.abstractfactory;
 
 public interface PizzaIngredientFactory {
 
-	public void createDough();
+	public Dough createDough();
 
-	public void createSauce();
+	public Sauce createSauce();
 
-	public void createCheese();
+	public Cheese createCheese();
 
-	public void createVeggies();
+	public Veggies createVeggies();
 
-	public void createPepporoni();
+	public Pepproni createPepporoni();
 
-	public void createClam();
+	public Clam createClam();
 
 }

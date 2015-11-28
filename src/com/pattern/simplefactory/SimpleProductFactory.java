@@ -11,10 +11,6 @@ public class SimpleProductFactory {
 			p = new Product2();
 		}
 
-		p.manufacture();
-		p.packageProduct();
-		p.label();
-
 		return p;
 
 	}

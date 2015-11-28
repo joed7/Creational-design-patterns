@@ -10,3 +10,5 @@ This design pattern consists of three components: Prototype, Protoype registry, 
 
 * Client : Client makes use of the registry service to access prototype instances.
 
+UML diagram for the implementation looks like this
+![](https://github.com/joed7/Creational-design-patterns/blob/master/images/prototype_pattern_uml_diagram.jpg)

@@ -20,10 +20,11 @@ The pattern consists of the following components: Creator, ConcreteCreator, Prod
 In our implmentation of Factory Method, [__AbstractPizzaStore__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/AbstractPizzaStore.java) is the Creator class, [__ModifiedChicagoPizzaStore__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/ModifiedChicagoPizzaStore.java), [__ModifiedNYPizzaStore__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/ModifiedNYPizzaStore.java) are the ConcreteCreator clasess, [__Pizza__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/Pizza.java) is an abstract class which is implemented by all of the concrete pizza classes, and [__ChicagoPizza1__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/ChicagoPizza1.java),  [__ChicagoPizza2__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/ChicagoPizza2.java), [__NYPizza1__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/NYPizza1.java), [__NYPizza2__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/NYPizza2.java) are the ConcreteProduct classes. 
 
 
-Abstract store standardizes the pizza creation process in the __OrderPizza__ method, which internally calls the factory method __CreatePizza__.
+AbstractPizzaStore standardizes the pizza creation process in the __OrderPizza__ method, which internally calls the factory method __CreatePizza__.
 
 ```
-AbstractPizzaStore.java
+//AbstractPizzaStore.java
+
 	protected abstract Pizza createPizza(String name);
 
 	public Pizza orderPizza(String name) {
@@ -57,3 +58,4 @@ ModifiedNYPizzaStore provides the implmentation of the factory method
 	}
 ```	
 	
+In our design, if in future, we want to expand our pizza franchisee, we just have to extend the AbstractPizzaStore and provide the implmentation of the factory method. 	

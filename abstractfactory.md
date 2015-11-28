@@ -12,7 +12,14 @@ Our implmentation for this design pattern consists of the following components:
 
 * [Chicago Pizza Ingredient Factory](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/ChicagoPizzaIngredientFactory.java), [NY Pizza Ingredient Factory](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/NYPizzaIngredientFactory.java): These provide the concrete implementation for the abstract factory.
 
-* [NY Pizza Store](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/NYPizzaStore.java), [Chicago Pizza Store](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/ChicagoPizzaStore.java): Clients of the Abstract Factory. They are decoupled from any of the specifics of the concrete products.  
+* [NY Pizza Store](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/NYPizzaStore.java), [Chicago Pizza Store](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/ChicagoPizzaStore.java): Clients of the Abstract Factory. 
 
 * [Clam](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/Clam.java), [Dough](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/Dough.java), [Veggies](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/Veggies.java), [Sauce](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/Sauce.java), [Cheese](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/Cheese.java): Interfaces, the concrete products implement. 
 
+* [Cheese Pizza](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/CheesePizza.java), [PepporoniPizza](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/PepporoniPizza.java): It holds an instance to the Abstract Ingredient factory. They are decoupled from any of the specifics of the concrete products. So, on runtime we can specify different concrete factory instaces, and depedending upon the instance of the factory provided(Chicago, NY), it either creates NY or Chicago products.
+
+__Source Code__
+
+The source code for this design pattern can be found [here](https://github.com/joed7/Creational-design-patterns/tree/master/src/com/pattern/abstractfactory).
+
+ 

@@ -16,3 +16,7 @@ UML diagram for the implementation looks like this
 In our implementation, Circle, Square, Rectangle are Prototypes; Shape Registry is the Prototype Registry. If in future, we want to add another shape, we can extend the shape and add an entry in the Shape Registry corresponding to that shape. Another benefit of the Prototype design pattern is that client can generate object without knowing the type beforehand.
 
 In our implementation, we perform the shallow copy of the instance, If we want to perform deep copy instead, the `clone()` call needs to replaced with appropriate functionality. 
+
+__Source Code__
+
+The source code for Prototype design pattern can be found [here](https://github.com/joed7/Creational-design-patterns/tree/master/src/com/pattern/prototype)

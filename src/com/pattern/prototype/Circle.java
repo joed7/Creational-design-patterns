@@ -1,9 +1,9 @@
 package com.pattern.prototype;
 
-public class Triangle extends Shape {
+public class Circle extends Shape {
 
-	public Triangle() {
-		type = "Rectangle";
+	public Circle() {
+		type = "Circle";
 	}
 
 	@Override

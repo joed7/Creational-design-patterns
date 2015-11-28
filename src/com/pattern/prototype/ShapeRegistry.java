@@ -11,7 +11,7 @@ public class ShapeRegistry {
 	private static java.util.Map<String, Shape> prototypes = new java.util.HashMap<String, Shape>();
 
 	static {
-		prototypes.put(ModelType.TRIANGLE, new Triangle());
+		prototypes.put(ModelType.TRIANGLE, new Circle());
 		prototypes.put(ModelType.SQUARE, new Square());
 		prototypes.put(ModelType.RECTANGLE, new Rectangle());
 	}

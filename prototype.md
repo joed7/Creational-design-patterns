@@ -48,3 +48,5 @@ In our implementation, we perform the shallow copy of the instance, If we want t
 __Source Code__
 
 The source code for Prototype design pattern can be found [here](https://github.com/joed7/Creational-design-patterns/tree/master/src/com/pattern/prototype)
+
+[Previous](https://github.com/joed7/Creational-design-patterns/blob/master/builder.md)  |  [Home](https://github.com/joed7/Creational-design-patterns/blob/master/home.md)  |  [Next](https://github.com/joed7/Creational-design-patterns/blob/master/source-code.md)

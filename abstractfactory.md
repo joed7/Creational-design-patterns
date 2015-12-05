@@ -30,7 +30,7 @@ public interface PizzaIngredientFactory {
 
 * [Chicago Pizza Ingredient Factory](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/ChicagoPizzaIngredientFactory.java), [NY Pizza Ingredient Factory](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/NYPizzaIngredientFactory.java): These provide the concrete implementation for the abstract factory.
 
-The ingredient factory below return Chicao based products.
+The ingredient factory below returns Chicago based products.
 ```
 public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
 

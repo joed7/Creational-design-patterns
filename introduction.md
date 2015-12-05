@@ -4,7 +4,7 @@ This is the presentation on Creational Design Patterns as part of the [Foundatio
 
 Table of Contents
 
-* (Introduction)[https://github.com/joed7/Creational-design-patterns/blob/master/introduction.md]
+* [Introduction](https://github.com/joed7/Creational-design-patterns/blob/master/introduction.md)
 * Creational Design Paterns
   * [Singleton](https://github.com/joed7/Creational-design-patterns/blob/master/singleton.md)
   * [Simple Factory](https://github.com/joed7/Creational-design-patterns/blob/master/simplefactory.md)

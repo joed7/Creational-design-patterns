@@ -10,3 +10,5 @@ Creational design patterns consists of two key ideas:
 
 Creational design patterns provide different methods to remove instances to the concrete classes from the code that needs to instantiate them, thus providing independency between objects and classes.
 Modern software engineering relies more on object composition than class inheritance, where we, instead of hard-coding behaviors in a class, define a smaller set of basic behaviors that can be composed into more complex ones. Hard-coding behaviors are inflexible and unscalable because one need to either override or re-implement the whole class to change or extend parts of the design. For these reasons, creational patterns are more useful than hard-coding behaviors.
+
+ [Home](https://github.com/joed7/Creational-design-patterns/blob/master/home.md)  |  [Next](https://github.com/joed7/Creational-design-patterns/blob/master/references.md)

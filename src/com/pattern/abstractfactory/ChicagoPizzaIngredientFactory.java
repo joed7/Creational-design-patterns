@@ -8,34 +8,35 @@ package com.pattern.abstractfactory;
 
 public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
 
+
 	@Override
 	public Dough createDough() {
-		return null;
+		return new ChicagoDough();
 	}
 
 	@Override
 	public Sauce createSauce() {
-		return null;
+		return new ChicagoSauce();
 	}
 
 	@Override
 	public Cheese createCheese() {
-		return null;
+		return new ChicagoCheese();
 	}
 
 	@Override
 	public Veggies createVeggies() {
-		return null;
+		return new ChicagoVeggies();
 	}
 
 	@Override
 	public Pepproni createPepporoni() {
-		return null;
+		return new ChicagoPepporoni();
 	}
 
 	@Override
 	public Clam createClam() {
-		return null;
+		return new ChicagoClam();
 	}
 
 }

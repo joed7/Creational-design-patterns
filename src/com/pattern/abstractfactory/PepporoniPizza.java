@@ -4,6 +4,7 @@ package com.pattern.abstractfactory;
 public class PepporoniPizza extends Pizza {
 	
 	PizzaIngredientFactory factory;
+	private Pepproni pepporoni;
 
 	
 	public PepporoniPizza(PizzaIngredientFactory factory) {
@@ -14,9 +15,9 @@ public class PepporoniPizza extends Pizza {
 
 	@Override
 	public void prepare() {
-		factory.createDough();
-		factory.createSauce();
-		factory.createPepporoni();
+		dough = factory.createDough();
+		sauce = factory.createSauce();
+		pepporoni = factory.createPepporoni();
 	}
 
 }

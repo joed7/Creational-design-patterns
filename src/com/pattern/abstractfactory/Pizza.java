@@ -2,6 +2,8 @@ package com.pattern.abstractfactory;
 
 public abstract class Pizza {
 	String name;
+	protected Dough dough;
+	protected Sauce sauce;
 
 	public abstract void prepare();
 

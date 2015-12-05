@@ -63,3 +63,5 @@ In our design, if in future, we want to expand our pizza franchisee, we just hav
 __Source Code__
 
 The source code for this design pattern can be found [here](https://github.com/joed7/Creational-design-patterns/tree/master/src/com/pattern/factorymethod).
+
+[Previous](https://github.com/joed7/Creational-design-patterns/blob/master/simplefactory.md)  |  [Home](https://github.com/joed7/Creational-design-patterns/blob/master/home.md)  |  [Next](https://github.com/joed7/Creational-design-patterns/blob/master/abstractfactory.md)

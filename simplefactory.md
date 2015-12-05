@@ -66,3 +66,5 @@ This class is now closed for modification, as nothing needs to be modified to ac
 __Source Code__
 
 The source code for this design pattern can be found [here](https://github.com/joed7/Creational-design-patterns/tree/master/src/com/pattern/simplefactory).
+
+[Previous](https://github.com/joed7/Creational-design-patterns/blob/master/singleton.md)  |  [Home](https://github.com/joed7/Creational-design-patterns/blob/master/home.md)  |  [Next](https://github.com/joed7/Creational-design-patterns/blob/master/factorymethod.md)

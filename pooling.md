@@ -1,6 +1,6 @@
 ##Object Pooling
 
-In Object pooling design pattern, we instantiate a bunch of instances for a parituclar class and store them in a data-structure. When a client requests the instance, we remove the item from the data-structure and issue it to the client, and when the client is done, the instance is put back in the data-structure; Thus allowing the reuse for the instances created. This is specifically beneficial in the scenarios where cost of initializing a class instance is high. We generally specify maximum size for the pool which specify maximum number of objects we can have at a time, if the number of clients connections exceed the maximum size of the pool, the client has to wait until one of pool objects becomes free.
+In Object pooling design pattern, we instantiate a bunch of instances for a partiuclar class and store them in a data-structure. When a client requests the instance, we remove the item from the data-structure and issue it to the client, and when the client is done, the instance is put back in the data-structure; Thus allowing the reuse for the instances created. This is specifically beneficial in the scenarios where cost of initializing a class instance is high. We generally specify maximum size for the pool which is the maximum number of objects we can have at a time, if the number of clients connections exceed the maximum size of the pool, the client has to wait until one of pool objects becomes free.
 
 The general diagram for object pool design pattern looks like this:
 ![](https://github.com/joed7/Creational-design-patterns/blob/master/images/object-pool.png)  
@@ -11,7 +11,7 @@ The general diagram for object pool design pattern looks like this:
 
 * Client - Instances of classes which request Reusable objects.
 
-* ReusablePool - Instances of classes in this role manage Reusable objects for use by Client objects.
+* ReusablePool - The class class which manages Reusable objects for use by Client objects.
 
 ```
 public abstract class ObjectPool<T> {
@@ -56,7 +56,7 @@ public abstract class ObjectPool<T> {
 
 }
 ```
-The above code defines an abstract class for an object pool. The class has `getItem()` and `returnItem()` methods which clients use to request and returns pool objects. The class leaves method `create()` abstract and leaves the implmentation to the sub-classes. 
+The above code defines an abstract class for an object pool. The class has `getItem()` and `returnItem()` methods which clients use to request and returns pool objects. The class defines method `create()` as abstract and leaves the implementation to the sub-classes. 
 
 ```
 	@Override
@@ -72,7 +72,7 @@ The above code defines an abstract class for an object pool. The class has `getI
 
 The above source-code provides the definition of the `create()` method for JDBC Connection object. 	
 
-The above implementation initializes the pool objects all the once at the beginning, In some variation, pool objectes can be ceated on need basis much like the flow chart shown below.
+The above implementation initializes the pool objects all the once at the beginning, In some variations, pool objects can be created on need basis much like the flow chart shown below.
 
 ![](https://github.com/joed7/Creational-design-patterns/blob/master/images/Object_pool_1.png)  
 

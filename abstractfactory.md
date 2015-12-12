@@ -1,14 +1,14 @@
 ##Abstract Factory
 
-Abstract Factory provides an interface for creating families of related products; By writing code to the interface, we decouple our code from the actual factory that creates the products. Since our client code is decoupled from the acutal products, we can subsitute different factories to get different beahviors. This allows us to implement a family of factories of similar theme but meant for diffent parameters like regions, demographics. operating systems etc.
+Abstract Factory provides an interface for creating families of related products; By writing code to the interface, we decouple our code from the actual factory that creates the products. Since our client code is decoupled from the actual products, we can substitute different factories to get different behaviors. This allows us to implement a family of factories of similar theme, but meant for different parameters like regions, demographics. operating systems etc.
 
 The UML diagram for this design pattern looks like this:
 
 ![](https://github.com/joed7/Creational-design-patterns/blob/master/images/Abstract_Factory_design_pattern.png)
 
-Our implmentation for this design pattern consists of the following components:
+Our implementation for this design pattern consists of the following components:
 
-* [Pizza Ingredient Factory](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/PizzaIngredientFactory.java): This is the class that provides an interface for a family of products. In this example, the products whose families we make are Dough, Sauce, cheese etc.
+* [Pizza Ingredient Factory](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/PizzaIngredientFactory.java): This is the class that provides an interface for a family of products. In this example, the products, whose families we make, are Dough, Sauce, cheese etc.
 
 ```
 public interface PizzaIngredientFactory {
@@ -75,7 +75,7 @@ public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
 
 * [NY Pizza Store](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/NYPizzaStore.java), [Chicago Pizza Store](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/ChicagoPizzaStore.java): Clients of the Abstract Factory. 
 
-* [Cheese Pizza](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/CheesePizza.java), [Pepporoni Pizza](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/PepporoniPizza.java): It holds an instance to the Abstract Ingredient factory. They are decoupled from any of the specifics of the concrete products. So, on runtime we can specify different concrete factory instaces, and depedending upon the instance of the factory provided(Chicago, NY), it either creates NY or Chicago products.
+* [Cheese Pizza](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/CheesePizza.java), [Pepporoni Pizza](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/abstractfactory/PepporoniPizza.java): It holds an instance to the Abstract Ingredient factory. They are decoupled from any of the specifics of the concrete products. So, on runtime we can specify different concrete factory instances, and depending upon the instance of the factory provided(Chicago, NY), it either creates NY or Chicago products.
 
 ```
 public class CheesePizza extends Pizza {

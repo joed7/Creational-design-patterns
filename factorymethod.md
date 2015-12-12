@@ -8,16 +8,16 @@ The UML diagram for this design pattern looks like this:
 
 The pattern consists of the following components: Creator, ConcreteCreator, Product, ConcreteProduct.
 
-* Creator: The creator class is the abstract class that contains the abstract factory method, whose implementaion is provided by the subclasses, along with the implementations for all of the methods to manipulate products. The creator class is written without knowledge of the actual products that will be created. It is loosely coupled with ConcreteProducts.
+* Creator: The creator class is the abstract class that contains the abstract factory method, whose implementation is provided by the subclasses, along with the implementations for all of the methods to manipulate products. The creator class is written without the knowledge of the actual products that will be created. It is loosely coupled with ConcreteProducts.
 
-* ConcreteCreator: This class implements the factoryMethod which actually produces the products. It is responsible for creating one or more concrete products; It is only class with knowledge of how to create ConcreteProducts. 
+* ConcreteCreator: This class implements the factoryMethod, which actual produces the products. It is responsible for creating one or more concrete products; It is the only class with knowledge of how to create ConcreteProducts. 
 
-* Product: Product is the interface all the concrete products implement.
+* Product: Product is the interface, all the concrete products implement.
 
-* ConcreteProduct: They are the actually products being created.
+* ConcreteProduct: The products being created.
 
 
-In our implmentation of Factory Method, [__AbstractPizzaStore__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/AbstractPizzaStore.java) is the Creator class, [__ModifiedChicagoPizzaStore__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/ModifiedChicagoPizzaStore.java), [__ModifiedNYPizzaStore__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/ModifiedNYPizzaStore.java) are the ConcreteCreator clasess, [__Pizza__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/Pizza.java) is an abstract class which is implemented by all of the concrete pizza classes, and [__ChicagoPizza1__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/ChicagoPizza1.java),  [__ChicagoPizza2__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/ChicagoPizza2.java), [__NYPizza1__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/NYPizza1.java), [__NYPizza2__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/NYPizza2.java) are the ConcreteProduct classes. 
+In our implementation of Factory Method, [__AbstractPizzaStore__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/AbstractPizzaStore.java) is the Creator class, [__ModifiedChicagoPizzaStore__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/ModifiedChicagoPizzaStore.java), [__ModifiedNYPizzaStore__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/ModifiedNYPizzaStore.java) are the ConcreteCreator clasess, [__Pizza__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/Pizza.java) is an abstract class which is implemented by all of the concrete pizza classes, and [__ChicagoPizza1__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/ChicagoPizza1.java),  [__ChicagoPizza2__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/ChicagoPizza2.java), [__NYPizza1__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/NYPizza1.java), [__NYPizza2__](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/factorymethod/NYPizza2.java) are the ConcreteProduct classes. 
 
 
 AbstractPizzaStore standardizes the pizza creation process in the __OrderPizza__ method, which internally calls the factory method __CreatePizza__.
@@ -41,7 +41,7 @@ AbstractPizzaStore standardizes the pizza creation process in the __OrderPizza__
 	}
 ```	
 
-ModifiedNYPizzaStore provides the implmentation of the factory method
+ModifiedNYPizzaStore provides the implementation of the factory method
 
 ```
 	@Override

@@ -1,6 +1,6 @@
 ##Builder
 
-Builder design pattern allows us to separate the construction of a complex object from its representation,which allows the same construction to have different representation. It is a good choice when the class, that is supposed to instantiated, expects more than a handful of parameters. One solution, in that scenario, is to multiple constructors with different combinations of parameters, for instance
+Builder design pattern allows us to separate the construction of a complex object from its representation,which allows the same construction to have different representation. It is a good choice when the class, that is supposed to instantiated, expects more than a handful of parameters. One solution, in that scenario, is to have multiple constructors with different combinations of parameters, for instance
 
 
 ```
@@ -10,7 +10,7 @@ Pizza(int size, boolean cheese, boolean pepperoni) { ... }
 Pizza(int size, boolean cheese, boolean pepperoni, boolean bacon) { ... }
 ```
 
-This kind of design is referred to as Telescoping constructor pattern. Managing and using this kind of code is difficult and is not preferrable. Alternative to this kind of code is Builder pattern like the code below 
+This kind of design is referred to as Telescoping constructor pattern. Managing and using this kind of code is difficult and is not preferable. Alternative to this kind of code is Builder pattern like the code below 
 
 ```
 public class Pizza {
@@ -64,9 +64,9 @@ public class Pizza {
 Pizza p = new Pizza.Builder(size.MEDIUM).cheese(true).pepperoni(true).build();
 
 ```
-This pattern is flexible and it is easy to add manipulate parameter list in the future. Here we replace the multiple constructors with a series of parameters like the code in the following block `new Pizza.Builder(size.MEDIUM).cheese(true).pepperoni(true).build()`.
+This pattern is flexible and it is easy to add/delete/manipulate parameter list in the future. Here we replace the multiple constructors with a series of parameters like the code in the following block `new Pizza.Builder(size.MEDIUM).cheese(true).pepperoni(true).build()`.
 
-One anology of builder pattern is building a meal at a fast food restraunt.  It typically consist of some combination main item, a side item, a drink, a dessert etc. The customer specifies the list of items he wants in the meal, that is analogous to the code  
+One analogy of builder pattern is building a meal at a fast food restaurant; It typically consist of some combination of main item, a side item, a drink, a dessert etc. The customer specifies the list of items he wants in the meal, which is analogous to the code  
 `new Pizza.Builder(size.MEDIUM).cheese(true).pepperoni(true).build();` above.
 
 ![](https://github.com/joed7/Creational-design-patterns/blob/master/images/builder.png)

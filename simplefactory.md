@@ -1,6 +1,6 @@
 ##SimpleFactory
 
-Simple factory allows us to create objects without exposing the object creation logic to the client. Client specify a number or a string or a enum type to the factory, and it returns an instance on the basis of that. It allows use to sperate code of object instantiation from the code that makes use of the created objects. For e.g. The [ProductFactory](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/simplefactory/ProductFactory.java) class violates open(for extension)/closed(for modification) principle as if we want to add/remove products, the class has to be modified; The class is tightly coupled with concrete types of the products(poduct1, product2).
+Simple factory allows us to create objects without exposing the object creation logic to the client. Client specifies a number or a string or a enum type to the factory, and it returns an instance on the basis of that. It allows use to separate code of object instantiation from the code that makes use of the created objects. For e.g. The [ProductFactory](https://github.com/joed7/Creational-design-patterns/blob/master/src/com/pattern/simplefactory/ProductFactory.java) class violates open(for extension)/closed(for modification) principle, since if we want to add/remove products, the class has to be modified; The class is tightly coupled with concrete types of the products(poduct1, product2).
 
 ```
 	public Product produceProduct(String name) {
@@ -61,7 +61,7 @@ and change the client to include the instance of simple factory like [ModifiedPr
 	}
 ```
 
-This class is now closed for modification, as nothing needs to be modified to accomodate new products; The class is now loosely coupled. 	
+This class is now closed for modification, as nothing needs to be modified to accommodate new products; The class is now loosely coupled. 	
 
 __Source Code__
 

@@ -1,6 +1,10 @@
 ##Creational Design Patterns
 
+<<<<<<< Updated upstream
 This is the presentation on Creational Design Patterns as part of the [Foundation of Software Engineering] (http://www.cs.colorado.edu/~kena/classes/5828/f15/) course. In this presentation, we discuss the most typical creational design pattern, their components, UML diagrams and thier usage. All of the design patterns, in this presentation, have been implemented in Java.
+=======
+This is the presentation on Creational Design Patterns as part of the [Foundation of Software Engineering] (http://www.cs.colorado.edu/~kena/classes/5828/f15/) course. In this presentation, we discuss the most typical creational design patterns, their components, UML diagrams and their usage. 
+>>>>>>> Stashed changes
 
 Table of Contents
 
